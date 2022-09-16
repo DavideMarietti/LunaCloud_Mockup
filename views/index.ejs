@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Luna Cloud</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <meta name="apple-mobile-web-app-title" content="Luna Cloud">
+
+  <link rel="stylesheet" href="./libs/fontawesome/css/all.css">
+  <link rel="stylesheet" href="./libs/kendo/styles/kendo.common.min.css" />
+  <link rel="stylesheet" href="./libs/kendo/styles/kendo.luna.min.css" />
+  <link rel='stylesheet' href='./stylesheets/style.css' />
+
+  <script src="./libs/kendo/js/jquery.min.js"></script>
+  <script src="./libs/kendo/js/kendo.all.min.js"></script>
+  <script src="./libs/monaco-editor/min/vs/loader.js"></script>
+
+  <script src="./javascripts/data.js"></script>
+</head>
+<body class="gradient">
+  <div id="main-container"></div>
+</body>
+</html>
+<%- include('templates/home.ejs') %>
+<%- include('templates/db_manager.ejs') %>
+<%- include('templates/macro_manager.ejs') %>
+<%- include('templates/scheduler.ejs') %>
+<%- include('templates/publish_preview.ejs') %>
+<%- include('templates/help.ejs') %>
+<%- include('templates/config.ejs') %>
+
+<script type="module">
+  import * as helpers from '/javascripts/helpers.js'
+  import * as home from '/javascripts/init/home.js'
+  // on load
+  $(function() {
+    // load main page
+    helpers.load_page("main-container","home-template",home.home_init);
+  })
+</script>

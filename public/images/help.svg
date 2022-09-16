@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24px"
+   height="24px"
+   viewBox="0 0 24 24"
+   role="img"
+   aria-labelledby="helpIconTitle"
+   stroke="#000000"
+   stroke-width="2"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   fill="none"
+   color="#000000"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="help.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Help</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs13" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="-5.8983051"
+     inkscape:cy="12"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9" />
+  <title
+     id="helpIconTitle">Help</title>
+  <path
+     d="m 12.050847,14.171033 c 0,-2.120186 1.670708,-2.475 2.246002,-3.048877 0.577158,-0.575737 0.934275,-1.3719573 0.934275,-2.2515859 0,-1.7564186 -1.423858,-3.1802774 -3.180277,-3.1802774 -0.949754,0 -1.80227,0.4163261 -2.3850073,1.0764365 -0.2694525,0.305229 -0.4812239,0.6625807 -0.6182578,1.054997"
+     id="path3"
+     inkscape:connector-curvature="0"
+     style="fill:none;fill-opacity:1;stroke:#4b4b4b;stroke-width:2.1201849;stroke-opacity:1" />
+  <line
+     x1="12.050848"
+     y1="17.351309"
+     x2="12.050848"
+     y2="17.351309"
+     id="line5"
+     style="fill:none;fill-opacity:1;stroke:#4b4b4b;stroke-width:2.1201849;stroke-opacity:1" />
+  <circle
+     cx="12.050848"
+     cy="12.050847"
+     id="circle7"
+     style="fill:none;fill-opacity:1;stroke:#4b4b4b;stroke-width:2.1201849;stroke-opacity:1"
+     r="10.600925" />
+</svg>

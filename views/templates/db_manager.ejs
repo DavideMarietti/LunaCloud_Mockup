@@ -1,0 +1,94 @@
+<script type="text/x-kendo-template" id="db-manager-toolbar-template">
+    <label class="to-hide">Display mode</label>
+    <div id="db-manager-display">
+        <span data-icon="thumbnails-left" title="List & Detail"></span>
+        <span data-icon="layout-side-by-side" title="Full list"></span>
+        <span data-icon="stop" title="Full detail"></span>
+    </div>
+    <div class="to-hide" style="width: 0.1vw;"></div>
+    <div class="to-hide">
+        <label for="db-manager-group">Grouping</label>
+        <input type="checkbox" id="db-manager-group"/>
+    </div>
+    <span class="to-hide k-searchbox k-input k-input-md k-rounded-md k-input-solid k-grid-search"
+          style="float: right; position: absolute; right: 0.5vw; width: 9vw">
+        <span class="k-input-icon k-icon k-i-search"></span>
+        <input autocomplete="off" placeholder="Search..." title="Search..." class="k-input-inner">
+    </span>
+</script>
+
+<script type="text/x-kendo-template" id="db-manager-card-template">
+    <div class="db-manager-card" style='background-image: url(/images/#:data.obj#.svg);'>
+        <div class="card-name">#:data.name#</div>
+        <div class="card-type">#:data.type#</div><br>
+        <div class="card-id">#:data.id#</div>
+        <div class="card-space">#:data.cols_dims# - #:data.cells_rows# - #:data.disk_space#</div><br>
+        <div class="card-created">
+            <span class="k-icon k-i-star-outline"></span> #:data.created_by# - #:data.created_on#
+            <span style="width: 1vw; display: inline-block"></span>
+            <span class="k-icon k-i-pencil"></span> #:data.modified_by# - #:data.modified_on#
+        </div>
+    </div>
+</script>
+
+<script type="text/x-kendo-template" id="db-manager-left-template">
+    <div class="left-container-box">
+        <div class="left-container-title">Database Manager</div>
+        <div style="text-align: center">
+            <br><button id="new-object" type="button">Create object</button>
+        </div>
+        <input id="all-objs" type="checkbox"><h3>Objects</h3>
+        <div style="margin-left:1vw">
+            <div><input id="tables" type="checkbox"><label for="tables" class="ico-table">Tables</label></div>
+            <div><input id="cubes" type="checkbox"><label for="cubes" class="ico-cube">Cubes</label></div>
+            <div><input id="lists" type="checkbox"><label for="lists" class="ico-list">Lists</label></div>
+            <div><input id="views" type="checkbox"><label for="views" class="ico-view">Views</label></div>
+            <div><input id="charts" type="checkbox"><label for="charts" class="ico-chart">Charts</label></div>
+        </div>
+        <input id="all-tags" type="checkbox"><h3>Tags</h3>
+        <label><input type="radio" name="radio" checked/>All</label>
+        <label><input type="radio" name="radio" />Any</label>
+        <div style="margin-left:1vw">
+            <div><input id="tag1" type="checkbox"><label for="tag1" class="tag">Budget</label></div>
+            <div><input id="tag2" type="checkbox"><label for="tag2" class="tag">Customers</label></div>
+            <div><input id="tag3" type="checkbox"><label for="tag3" class="tag">Geo</label></div>
+            <div><input id="tag4" type="checkbox"><label for="tag4" class="tag">Products</label></div>
+            <div><input id="tag5" type="checkbox"><label for="tag5" class="tag">Time</label></div>
+            <div><input id="tag5" type="checkbox"><label for="tag5" class="tag">What If</label></div>
+        </div>
+        <input id="all-users" type="checkbox"><h3>Users</h3>
+        <div style="margin-left:1vw">
+            <div><input id="tag4" type="checkbox"><label for="tag4" class="user">Davide</label></div>
+            <div><input id="tag3" type="checkbox"><label for="tag3" class="user">Marco</label></div>
+            <div><input id="tag2" type="checkbox"><label for="tag2" class="user">Max</label></div>
+            <div><input id="tag5" type="checkbox"><label for="tag5" class="user">Piero</label></div>
+            <div><input id="tag1" type="checkbox"><label for="tag1" class="user">Roby</label></div>
+        </div>
+    </div>
+</script>
+<script type="text/x-kendo-template" id="db-manager-right-template">
+    <div id="db-manager-grid"></div>
+    <div id="db-manager-detail">
+        <div id="cube-detail-tabs" style="height: 100%"></div>
+    </div>
+</script>
+<script type="text/x-kendo-template" id="db-manager-info-template">
+    <label for="db-manager-name" class="ico-#:obj#">&nbsp;Name</label>
+    <input id="db-manager-name" value="#:name#"/>
+    <label for="db-manager-description">Description</label>
+    <textarea id="db-manager-description">#:description#</textarea>
+    <label for="db-manager-tags">Tags</label>
+    <textarea id="db-manager-tags">#:tags#</textarea>
+    <button id="db-manager-save">Save</button>
+    <button id="db-manager-duplicate">Duplicate</button>
+    <button id="db-manager-delete">Delete</button>
+</script>
+<script id="noDataTemplate" type="text/x-kendo-tmpl">
+        # var value = instance.input.val(); #
+        # var id = instance.element[0].id; #
+        <div>
+            Tag not found. Do you want to add it?&nbsp;
+        </div>
+        <br />
+        <button class="k-button k-button-solid-base k-button-solid k-button-md k-rounded-md" onclick="addNew('#: id #', '#: value #')" ontouchend="addNew('#: id #', '#: value #')">Add '#: value #'</button>
+</script>
